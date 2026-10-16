@@ -26,7 +26,7 @@ Because `[Freudentränen]` is not an acceptable user interface.
 
 - Restores bracketed labels even when they appear directly beside one another.
 - Restores exact standalone labels such as `lautes Lachen`.
-- Includes German, English, and Slovenian aliases.
+- Includes German, English, Slovenian, and Danish aliases.
 - Preserves unknown labels and lists them for easy reporting.
 - Runs entirely in the browser: no upload, tracking, account, or backend.
 - Works as a zero-build static site suitable for GitHub Pages.
