@@ -166,7 +166,7 @@ const emojiGroups = [
   {
     emoji: "🔥",
     labels: [
-      "Feuer", "Flamme", "fire", "flame", "ogenj", "plamen"
+      "Feuer", "Flamme", "fire", "flame", "ogenj", "plamen", "ild"
     ]
   },
   {
