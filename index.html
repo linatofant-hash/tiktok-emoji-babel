@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070a12">
+    <meta
+      name="description"
+      content="Restore emojis that TikTok renders as localized accessibility labels."
+    >
+    <title>Emoji Babel — TikTok Emoji Translator</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <p class="eyebrow">Project Babel · public emotional infrastructure</p>
+        <h1><span class="gradient-text">Emoji Babel</span></h1>
+        <p class="lede">
+          For all iPhone users staring at TikTok in bewilderment. Paste the German
+          stage directions. Get the human emotion back.
+        </p>
+      </header>
+
+      <section class="app-card" aria-labelledby="translator-heading">
+        <h2 id="translator-heading" hidden>TikTok emoji translator</h2>
+
+        <div class="workspace">
+          <div class="field">
+            <div class="field-header">
+              <label for="source-text">TikTok’s theatrical nonsense</label>
+              <button class="text-button" id="sample-button" type="button">Use example</button>
+            </div>
+            <textarea
+              id="source-text"
+              spellcheck="false"
+              placeholder="Paste [Freudentränen][Kichern] or other mangled labels here…"
+            ></textarea>
+          </div>
+
+          <div class="field">
+            <div class="field-header">
+              <label for="translated-text">Emotion restored</label>
+              <button class="text-button" id="clear-button" type="button">Clear</button>
+            </div>
+            <textarea
+              id="translated-text"
+              readonly
+              aria-live="polite"
+              placeholder="😂🤭 will appear here, as nature intended."
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="unknown-panel" id="unknown-panel" hidden>
+          <p>Untranslated stage directions — please report these:</p>
+          <ul id="unknown-list"></ul>
+        </div>
+
+        <div class="control-bar">
+          <p class="status" id="status" role="status"></p>
+          <div class="button-row">
+            <button class="secondary-button" id="copy-button" type="button" disabled>
+              Copy translation
+            </button>
+            <button class="primary-button" id="translate-button" type="button">
+              Restore emojis
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="facts" aria-label="About Emoji Babel">
+        <div class="fact">
+          <strong><span id="label-count">0</span> known labels</strong>
+          <span>German, English, and Slovenian aliases are included.</span>
+        </div>
+        <div class="fact">
+          <strong><span id="emoji-count">0</span> emoji families</strong>
+          <span>Easy to extend when TikTok invents a new crime.</span>
+        </div>
+        <div class="fact">
+          <strong>Nothing uploaded</strong>
+          <span>Translation happens entirely inside your browser.</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>Because <strong>[Freudentränen]</strong> is not an acceptable user interface.</p>
+        <p>Unofficial and unaffiliated with TikTok. Built out of bewilderment.</p>
+      </footer>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
