@@ -24,6 +24,14 @@ test("supports English and Slovenian aliases", () => {
   assert.equal(lookupEmoji("glasen smeh"), "🤣");
 });
 
+test("translates the Danish fire label found in TikTok comments", () => {
+  const result = translateTikTokText("[Ild][Ild][Ild]");
+
+  assert.equal(result.text, "🔥🔥🔥");
+  assert.equal(result.recovered, 3);
+  assert.deepEqual(result.unknown, []);
+});
+
 test("normalizes case, punctuation, and repeated spaces", () => {
   assert.equal(lookupEmoji("  FACE---WITH   TEARS OF JOY  "), "😂");
   assert.equal(lookupEmoji("KICHERN"), "🤭");
